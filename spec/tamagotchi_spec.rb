@@ -14,7 +14,12 @@ describe(Tamagotchi) do
   describe("#alive?") do
     it("is alive if all stat levels are above 0") do
       my_pet = Tamagotchi.new("Batman")
-      expect(my_pet.alive?()).to(eq(true))
+      expect(my_pet.alive?()).to(eq("alive"))
+    end
+    it("is dead if any stat level is 0") do
+      my_pet = Tamagotchi.new("Batman")
+      my_pet.set_food_level()
+      expect(my_pet.alive?()).to(eq("dead"))
     end
   end
 end
