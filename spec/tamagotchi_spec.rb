@@ -11,4 +11,10 @@ describe(Tamagotchi) do
       expect(my_pet.sleep_level()).to(eq(10))
     end
   end
+  describe("#alive?") do
+    it("is alive if all stat levels are above 0") do
+      my_pet = Tamagotchi.new("Batman")
+      expect(my_pet.alive?()).to(eq(true))
+    end
+  end
 end
