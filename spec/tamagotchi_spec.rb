@@ -1,5 +1,6 @@
 require('rspec')
 require('tamagotchi')
+require('pry')
 
 describe(Tamagotchi) do
   describe("#initialize") do
@@ -22,13 +23,13 @@ describe(Tamagotchi) do
       expect(my_pet.alive?()).to(eq("dead"))
     end
   end
-  # describe("#time_passes") do
-  #   it("decreases each stat level the Tamagotchi has left by 1") do
-  #     my_pet = Tamagotchi.new("Batman")
-  #     my_pet.time_passes()
-  #     expect(my_pet.food_level()).to(eq(9))
-  #   end
-  # end
+  describe("#time_passes") do
+    it("decreases each stat level the Tamagotchi has left by 1") do
+      my_pet = Tamagotchi.new("Batman")
+      my_pet.time_passes()
+      expect(my_pet.food_level()).to(eq(9))
+    end
+  end
   describe("#feed") do
     it("increases the Tamagotchi's food level by 1") do
       my_pet = Tamagotchi.new("Batman")
