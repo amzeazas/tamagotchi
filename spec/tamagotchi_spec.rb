@@ -36,4 +36,11 @@ describe(Tamagotchi) do
       expect(my_pet.feed()).to(eq(9))
     end
   end
+  describe("#play") do
+    it("increase the Tamagotchi's activity level by 1") do
+      my_pet = Tamagotchi.new("Batman")
+      my_pet.set_activity_level(8)
+      expect(my_pet.play()).to(eq(9))
+    end
+  end
 end
