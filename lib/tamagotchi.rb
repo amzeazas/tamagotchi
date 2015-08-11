@@ -23,6 +23,21 @@ class Tamagotchi
       "dead"
     end
   end
+
+  # define_method(:time_passes) do
+  #   while self.alive?() = "alive"
+  #     @food_level -= 1
+  #     @activity_level -= 1
+  #     @sleep_level -= 1
+  #     sleep(2)
+  # #   end
+  # end
+
+  define_method(:feed) do
+    @food_level += 1
+    @food_level
+  end
+
   define_method(:set_food_level) do |new_level|
     @food_level = new_level
   end
