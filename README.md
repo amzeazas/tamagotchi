@@ -4,7 +4,10 @@
 By Alexa Zeazas & Rachael Berecka
 
 ###Description
-This app allows the user to create and take care of a pet. In future versions, the user will also be able to interact with the pet in real time.
+This app allows the user to create and take care of a pet.
+
+_Goals for future updates_
+* _Allow users to interact with pet in real-time._
 
 ###Setup
 1. Clone the repo by typing **git clone https://github.com/azeazas/tamagotchi.git** into the terminal.
